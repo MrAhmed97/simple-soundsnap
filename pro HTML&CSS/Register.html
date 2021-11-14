@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="./images/law icon.jpg" type="image/jpg">
+    <meta charset="UTF-8">
+    <title>registration page</title>
+    <style>
+        
+        .button {
+            background-color: #190857;
+           border-radius: 50%;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+        div::after{
+            content: "*";
+            color: tomato;
+        }
+        input:invalid{
+            background-color: black;
+            content: "not valid";
+        }
+        input:invalid+span{
+            visibility: visible;
+        }
+        span{
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: aliceblue;">
+    <form action="index.html" method="get">
+        <label for="uid">UserID :</label>
+        <div><input type="hidden" value="userid" id="uid" placeholder="enter ur id"><br><br></div>
+        <label for="fname">first name:</label>
+        <div><input id="fname" type="text" name="firstname" placeholder="enter first name" required></div>
+        <label for="lname">last name:</label>
+        <div><input id="lname" type="text" name="lastname" placeholder="enter lastt name" required></div>
+        <label for="mail">Email:</label>
+        <div><input id="mail" type="email" name="email" accesskey="w" placeholder="enter ur mail" required>
+            <span> Not valid </span>
+        </div>
+        <label for="pass">password:</label>
+        <div><input id="pass" type="password" name="password" placeholder="password"></div>
+        <label for="rpass">repeat password:</label>
+        <div><input id="rpass" type="password" name="password" placeholder="password"></div>
+        <label for="date">Birth Date:</label>
+        <input id="date" type="date" name="birthdate"><br><br>
+        <label>user picture</label>
+        <input type="file" name="user picture"><br><br>
+        <fieldset>
+            <h2> Gender :</h2>
+            <input type="radio" name="gender" value="female" id="fem"><label for="fem">Female</label><br><br>
+            <input type="radio" name="gender" value="male" id="mal"><label for="mal">Male</label><br><br>
+        </fieldset>
+        <label>Faculty</label>
+        <select name="Faculties">
+            <option value="1">Arts</option>
+            <option value="2">education </option>
+            <option value="3">science</option>
+        </select><br><br>
+        <h2>Please choose your Interests :</h2>
+        <input id="1" type="checkbox" name="interests" value="reading">
+        <label for="1">reading</label><br><br>
+        <input id="2" type="checkbox" name="interests" value="programming" checked>
+        <label for="2">programming</label><br><br>
+        <input id="3" type="checkbox" name="interests" value="swemming">
+        <label for="3">swemming</label><br><br>
+        <input id="4" type="checkbox" name="interests" value="video games">
+        <label for="4">video games</label><br><br>
+        <h3>About You </h3>
+        <textarea rows="3" cols="20" tabindex="3"></textarea><br><br>
+        <input id="agree" type="checkbox" name="agreed terms" value="terms and condition">
+        <label for="agree">I agreed to<a href="./welcome.html" target="_blank"> terms and condition </a></label><br><br>
+
+        <small>press <kbd>alt + w</kbd></small><br><br>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+    </form>
+    <a href="https://www.google.com/" target="_blank"><button class="button">^</button></a>
+</body>
+
+</html>
